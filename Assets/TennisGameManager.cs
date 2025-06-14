@@ -43,6 +43,8 @@ public class TennisGameManager : GameManager
         player1.gameObject.SetActive(false);
         player2.gameObject.SetActive(false);
         score.gameObject.SetActive(false);
+
+        gameSettingsUI.gameObject.SetActive(true);
     }
 
     void Update()
