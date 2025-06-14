@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UnityProjects\\Project Arcade\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|d:\\unityprojects\\project arcade\\assets\\tennisgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|solutionrelative:assets\\tennisgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|d:\\unityprojects\\project arcade\\assets\\scripts\\gameplay\\tennis\\tennisplayerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\tennis\\tennisplayerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|D:\\UnityProjects\\Project Arcade\\assets\\scripts\\gameplay\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|d:\\unityprojects\\project arcade\\assets\\winzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EA87382-C553-D739-C7BA-B67C3FA75E5B}|Assembly-CSharp.csproj|solutionrelative:assets\\winzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TennisPlayerScript.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Project Arcade\\Assets\\Scripts\\Gameplay\\Tennis\\TennisPlayerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Tennis\\TennisPlayerScript.cs",
+              "ToolTip": "D:\\UnityProjects\\Project Arcade\\Assets\\Scripts\\Gameplay\\Tennis\\TennisPlayerScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Tennis\\TennisPlayerScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T23:38:38.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WinZone.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Project Arcade\\Assets\\WinZone.cs",
+              "RelativeDocumentMoniker": "Assets\\WinZone.cs",
+              "ToolTip": "D:\\UnityProjects\\Project Arcade\\Assets\\WinZone.cs",
+              "RelativeToolTip": "Assets\\WinZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:44:11.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Project Arcade\\Assets\\Scripts\\Gameplay\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\GameManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Project Arcade\\Assets\\Scripts\\Gameplay\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:40:17.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TennisGameManager.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Project Arcade\\Assets\\TennisGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\TennisGameManager.cs",
+              "ToolTip": "D:\\UnityProjects\\Project Arcade\\Assets\\TennisGameManager.cs",
+              "RelativeToolTip": "Assets\\TennisGameManager.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:34:33.463Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
