@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,14 @@ public class TennisGameManager : GameManager
     [Header("UI Elements")]
     public TennisSettingsUI gameSettingsUI;
     public Text score;
+    public GameObject winUI;
+    public Text winner;
+    public Text player1NameText;
+    public Text player1PointsText;
+    public Text player1HeightText;
+    public Text player2NameText;
+    public Text player2PointsText;
+    public Text player2HeightText;
 
     [Header("Prefabs")]
     public GameObject ball;
@@ -45,6 +54,7 @@ public class TennisGameManager : GameManager
         score.gameObject.SetActive(false);
 
         gameSettingsUI.gameObject.SetActive(true);
+        winUI.SetActive(false);
     }
 
     void Update()
@@ -52,17 +62,35 @@ public class TennisGameManager : GameManager
         score.text = player1Points + "-" + player2Points; //Update score text-a
     }
 
+    public void PrikaziSettings()
+    {
+        player1.gameObject.SetActive(false);
+        player2.gameObject.SetActive(false);
+        score.gameObject.SetActive(false);
+
+        gameSettingsUI.gameObject.SetActive(true);
+        winUI.SetActive(false);
+    }
+
     public void IncreasePlayerPoints(int player)
     {
         if(player == 1) //Uvecanje igracu 1
         {
             player1Points++;
-            if (player1Points >= pointsToWin) WinGame(1);
+            if (player1Points >= pointsToWin)
+            {
+                WinGame(1);
+                return;
+            }
         }
         else if(player == 2) //Uvecanje igracu 2
         {
             player2Points++;
-            if (player2Points >= pointsToWin) WinGame(2);
+            if (player2Points >= pointsToWin)
+            {
+                WinGame(2);
+                return;
+            }
         }
         ResetBall();
     }
@@ -87,28 +115,68 @@ public class TennisGameManager : GameManager
 
     public void ConfirmSettings()
     {
-        player1.gameObject.SetActive(true);
-        player2.gameObject.SetActive(true);
+        //Reset igre
+        ResetGame();
 
-        player1.gameObject.GetComponent<TennisPlayerScript>().controlable = true;
-        player2.gameObject.GetComponent<TennisPlayerScript>().controlable = true;
-
-        score.gameObject.SetActive(true);
-
-        pointsToWin = gameSettingsUI.poeniZaPobedu;
-        player1Height = gameSettingsUI.visinaReketa1;
-        player2Height = gameSettingsUI.visinaReketa2;
-        brzinaLoptice = gameSettingsUI.brzinaLopte;
-        imeIgraca1 = gameSettingsUI.imeIgraca1.text;
-        imeIgraca2 = gameSettingsUI.imeIgraca2.text;
-
+        //Deaktivacija settings UI
         gameSettingsUI.gameObject.SetActive(false);
 
+        //Spawn lopte
         ResetBall();
     }
 
-    public void WinGame()
+    public void ResetGame()
     {
+        //Aktiviranje reketa
+        player1.gameObject.SetActive(true);
+        player2.gameObject.SetActive(true);
 
+        //Omogucavanje kontrole reketa
+        player1.gameObject.GetComponent<TennisPlayerScript>().controlable = true;
+        player2.gameObject.GetComponent<TennisPlayerScript>().controlable = true;
+
+        //Prikazivanje score-a
+        score.gameObject.SetActive(true);
+
+        pointsToWin = gameSettingsUI.poeniZaPobedu;
+
+        player1Height = gameSettingsUI.visinaReketa1;
+        player2Height = gameSettingsUI.visinaReketa2;
+
+        brzinaLoptice = gameSettingsUI.brzinaLopte;
+
+        if (gameSettingsUI.imeIgraca1.text.Length != 0) imeIgraca1 = gameSettingsUI.imeIgraca1.text;
+        if (gameSettingsUI.imeIgraca2.text.Length != 0) imeIgraca2 = gameSettingsUI.imeIgraca2.text;
+
+        player1Points = 0;
+        player2Points = 0;
+    }
+
+    public override void WinGame(int igrac)
+    {
+        //Aktiviranje UI-a
+        winUI.SetActive(true);
+
+        //Reset animacije
+        Animator anim = winUI.GetComponent<Animator>();
+        if(anim != null)
+        {
+            anim.Rebind();
+            anim.Update(0f);
+        }
+
+        //Sync textova
+        if (igrac == 1)
+            winner.text = imeIgraca1 + " je pobedio/la!";
+        else
+            winner.text = imeIgraca2 + " je pobedio/la!";
+
+        player1NameText.text = imeIgraca1;
+        player1PointsText.text = "Poeni: " + player1Points;
+        player1HeightText.text = "Visina reketa: " + player1Height;
+
+        player2NameText.text = imeIgraca2;
+        player2PointsText.text = "Poeni: " + player2Points;
+        player2HeightText.text = "Visina reketa: " + player2Height;
     }
 }

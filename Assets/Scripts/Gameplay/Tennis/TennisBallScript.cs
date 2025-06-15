@@ -5,7 +5,7 @@ public class TennisBallScript : MonoBehaviour
 
     bool served;
     public float ballSpeed;
-    public float x, y;
+    float x, y;
 
     void Start()
     {
