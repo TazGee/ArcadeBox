@@ -66,4 +66,9 @@ public class SettingsManager : MonoBehaviour
         else
             Screen.fullScreen = false;
     }
+
+    public void HideThis()
+    {
+        gameObject.SetActive(false);
+    }
 }

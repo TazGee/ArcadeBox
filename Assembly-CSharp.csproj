@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\MainMenuManager.cs" />
     <Compile Include="Assets\TennisGameManager.cs" />
+    <Compile Include="Assets\PauseManager.cs" />
     <Compile Include="Assets\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
     <Compile Include="Assets\TennisSettingsUI.cs" />

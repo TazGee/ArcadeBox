@@ -55,6 +55,8 @@ public class TennisGameManager : GameManager
 
         gameSettingsUI.gameObject.SetActive(true);
         winUI.SetActive(false);
+
+        igraPocela = false;
     }
 
     void Update()
@@ -70,6 +72,8 @@ public class TennisGameManager : GameManager
 
         gameSettingsUI.gameObject.SetActive(true);
         winUI.SetActive(false);
+
+        igraPocela = false;
     }
 
     public void IncreasePlayerPoints(int player)
@@ -123,6 +127,8 @@ public class TennisGameManager : GameManager
 
         //Spawn lopte
         ResetBall();
+
+        igraPocela = true;
     }
 
     public void ResetGame()
