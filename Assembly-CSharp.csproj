@@ -63,11 +63,14 @@
   <ItemGroup>
     <Compile Include="Assets\MainMenuManager.cs" />
     <Compile Include="Assets\TennisGameManager.cs" />
+    <Compile Include="Assets\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
     <Compile Include="Assets\TennisSettingsUI.cs" />
+    <Compile Include="Assets\ResetZone.cs" />
     <Compile Include="Assets\WinZone.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Tennis\TennisPlayerScript.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Tennis\TennisBallScript.cs" />
+    <Compile Include="Assets\SceneLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
